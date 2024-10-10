@@ -7,19 +7,13 @@ const subtract = function(a, b) {
 };
 
 const sum = function(array) {
-	let sum=0;
-  for (i of array) {
-    sum+=i;
-  }
-  return sum;
+  return array.reduce((total, current)=>total+current, 0)
 };
 
 const multiply = function(array) {
-  let ans=1;
-  for (i of array) {
-    ans*=i;
-  }
-  return ans;
+  return array.reduce((product,current)=>{
+    return product*current;
+  })
 };
 
 const power = function(a, b) {

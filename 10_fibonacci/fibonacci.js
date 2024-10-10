@@ -1,7 +1,8 @@
 const fibonacci = function(num) {
-    if (+num<0) {
-        return 'OOPS';
-    }
+    // if (+num<0) {
+    //     return 'OOPS';
+    // }
+    +num<0?'OOPS':1;
     let first=0;
     let second=1;
     let ans;
